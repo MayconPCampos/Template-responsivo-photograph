@@ -6,13 +6,14 @@
     <meta name="description" content="Descrição">
     <meta name="author" content="Maycon P. Campos">
     <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Uma Fotografia</title>
 </head>
 <body>
-    <div>
-        <!-- header -->
-        <header>
-            <h1>Uma Fotografia</h1>
+    <div id="page-container">
+        <!-- cabeçalho -->
+        <header id="header">
+            <h1>This is photograph</h1>
             <p>Temporibus, dolores neque! Dolores itaque, quis debitis architecto amet magni molestias autem atque iure iste.</p>
             <img src="" alt="">
         </header>
@@ -22,18 +23,20 @@
         <nav></nav>
 
 
-        <!-- titulo -->
-        <section>
-            <p>25 de setembro</p>
-            <h2>Consectetur adipisicing elit Consectetur temporibus</h2>
-            <p>Assumenda incidunt quam, distinctio eius quas cum, nulla porro totam facere asperiores voluptatibus autem pariatur molestiae fugit eum beatae dolore deserunt quo ea at?</p>
-            <img src="" alt="">
-            <a href="#">Veja mais</a>
+        <!-- post principal -->
+        <section id="top-post">
+            <p class="top-post_date">25 de setembro</p>
+            <h2>Consectetur adipisicing elit</h2>
+            <p class="top-post_text">Assumenda incidunt quam, distinctio eius quas cum, nulla porro totam facere asperiores voluptatibus autem pariatur molestiae fugit eum beatae dolore deserunt quo ea at?</p>
+            <div class="top-post-image_container">
+                <img src="images/pic01.jpg" alt="">
+            </div>
+            <a class="btn" href="#">Veja mais</a>
         </section>
 
 
         <!-- cards -->
-        <section>
+        <section id="posts">
             <article>
                 <p>23 de outubro</p>
                 <h3>Obcaecati dicta distinctio ipsa</h3>
@@ -66,22 +69,28 @@
 
 
         <!-- paginação -->
-        <div>
-            <ul>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">...</a></li>
-                <li><a href="#">8</a></li>
-                <li><a href="#">9</a></li>
-                <li><a href="#">10</a></li>
-                <li><a href="#">Próxima</a></li>
-            </ul>
+        <div id="pagination">
+            <div>
+                <ul>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">...</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">9</a></li>
+                    <li><a href="#">10</a></li>
+                    <li><a href="#">Próxima</a></li>
+                </ul>
+            </div>
+            <div>
+                <a href="#">Próxima</a>
+            </div>
         </div>
+        
 
 
         <!-- contato -->
-        <section>
+        <section id="contact">
             <form action="">
                 <div>
                     <label for="nome">Nome</label>
@@ -125,7 +134,7 @@
 
 
         <!-- rodape -->
-        <footer>
+        <footer id="footer">
             <p>Maycon P. Campos</p>
             <p>&copy 2023</p>
         </footer>
