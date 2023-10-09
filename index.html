@@ -37,40 +37,40 @@
 
         <!-- cards -->
         <section id="posts">
-            <article>
+            <article class="post">
                 <p>23 de outubro</p>
-                <h3>Obcaecati dicta distinctio ipsa</h3>
-                <img src="" alt="">
-                <p>Quod tempore vero fugiat quaerat mollitia architecto, hic perferendis ipsum laudantium fuga ducimus dolores nemo autem beatae accusantium facere repudiandae debitis molestias.</p>
-                <a href="#">Veja mais</a>
+                <h3>Dicta distinctio obcaecati</h3>
+                <img src="images/pic02.jpg" alt="">
+                <p class="post-text">Quod tempore vero fugiat quaerat mollitia architecto, hic perferendis ipsum laudantium fuga ducimus dolores nemo autem beatae accusantium facere repudiandae debitis molestias.</p>
+                <a class="btn" href="#">Veja mais</a>
             </article>
-            <article>
+            <article class="post">
                 <p>23 de outubro</p>
-                <h3>Obcaecati dicta distinctio ipsa</h3>
-                <img src="" alt="">
-                <p>Quod tempore vero fugiat quaerat mollitia architecto, hic perferendis ipsum laudantium fuga ducimus dolores nemo autem beatae accusantium facere repudiandae debitis molestias.</p>
-                <a href="#">Veja mais</a>
+                <h3>Dicta distinctio obcaecati</h3>
+                <img src="images/pic03.jpg" alt="">
+                <p class="post-text">Quod tempore vero fugiat quaerat mollitia architecto, hic perferendis ipsum laudantium fuga ducimus dolores nemo autem beatae accusantium facere repudiandae debitis molestias.</p>
+                <a class="btn" href="#">Veja mais</a>
             </article>
-            <article>
+            <article class="post">
                 <p>23 de outubro</p>
-                <h3>Obcaecati dicta distinctio ipsa</h3>
-                <img src="" alt="">
-                <p>Quod tempore vero fugiat quaerat mollitia architecto, hic perferendis ipsum laudantium fuga ducimus dolores nemo autem beatae accusantium facere repudiandae debitis molestias.</p>
-                <a href="#">Veja mais</a>
+                <h3>Dicta distinctio obcaecati</h3>
+                <img src="images/pic04.jpg" alt="">
+                <p class="post-text">Quod tempore vero fugiat quaerat mollitia architecto, hic perferendis ipsum laudantium fuga ducimus dolores nemo autem beatae accusantium facere repudiandae debitis molestias.</p>
+                <a class="btn" href="#">Veja mais</a>
             </article>
-            <article>
+            <article class="post">
                 <p>23 de outubro</p>
-                <h3>Obcaecati dicta distinctio ipsa</h3>
-                <img src="" alt="">
-                <p>Quod tempore vero fugiat quaerat mollitia architecto, hic perferendis ipsum laudantium fuga ducimus dolores nemo autem beatae accusantium facere repudiandae debitis molestias.</p>
-                <a href="#">Veja mais</a>
+                <h3>Dicta distinctio obcaecati</h3>
+                <img src="images/pic05.jpg" alt="">
+                <p class="post-text">Quod tempore vero fugiat quaerat mollitia architecto, hic perferendis ipsum laudantium fuga ducimus dolores nemo autem beatae accusantium facere repudiandae debitis molestias.</p>
+                <a class="btn" href="#">Veja mais</a>
             </article>
         </section>
 
 
         <!-- paginação -->
         <div id="pagination">
-            <div>
+            <div class="pagination-btn-list">
                 <ul>
                     <li><a href="#">1</a></li>
                     <li><a href="#">2</a></li>
@@ -83,56 +83,63 @@
                 </ul>
             </div>
             <div>
-                <a href="#">Próxima</a>
+                <a class="pagination-btn btn" href="#">Próxima</a>
             </div>
         </div>
         
 
+        <!-- formulario -->
+        <section id="forms">
+            <form action="">
+                <div class="form-name">
+                    <label class="form-label" for="nome">Nome</label>
+                    <br>
+                    <input class="form-input" type="text" name="nome" id="nome">
+                </div>
+                <div class="form-email">
+                    <label class="form-label" for="email">Email</label>
+                    <br>
+                    <input class="form-input" type="email" name="email" id="email">
+                </div>
+                <div class="form-message">
+                    <label class="form-label" for="message">Mensagem</label>
+                    <br>
+                    <textarea class="form-input"  name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <input class="form-btn btn" type="submit" value="Enviar">
+            </form>
+        </section>
+
 
         <!-- contato -->
         <section id="contact">
-            <form action="">
-                <div>
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome">
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
-                </div>
-                <div>
-                    <label for="message">Mensagem</label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                </div>
-                <input type="submit" value="Enviar">
-            </form>
             <address>
-                <div>
+                <div class="address-container">
                     <p>Endereço</p>
                     <p>Rua Lugar algum, 1234</p>
                     <p>Cidade norte, 00000-0000</p>
                 </div>
-                <div>
+                <div class="address-container">
                     <p>Telefone</p>
                     <p>(00) 00000-0000</p>
                 </div>
-                <div>
+                <div class="address-container">
                     <p>Email</p>
                     <p>contato@email.com</p>
                 </div>
-                <div>
+                <div class="address-container">
                     <p>Social</p>
-                    <ul>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Github</a></li>
+                    <ul class="link-list">
+                        <li><a href="#"><img class="link-list_ico" src="svg/envelope-solid.svg" alt=""></a></li>
+                        <li><a href="#"><img class="link-list_ico" src="svg/instagram.svg" alt=""></a></li>
+                        <li><a href="#"><img class="link-list_ico" src="svg/twitter.svg" alt=""></a></li>
+                        <li><a href="#"><img class="link-list_ico" src="svg/youtube.svg" alt=""></a></li>
                     </ul>
                 </div>
             </address>
         </section>
-
-
+        
+        
         <!-- rodape -->
         <footer id="footer">
             <p>Maycon P. Campos</p>
