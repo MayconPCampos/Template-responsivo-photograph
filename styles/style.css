@@ -352,7 +352,6 @@ body{
                 margin-right: 5%;
             }
             
-
             /* header */
 
                 #header h1{
@@ -362,7 +361,6 @@ body{
                 #header p{
                     font-size: 1.3rem;
                 }
-
             
             /* post principal */
 
@@ -388,7 +386,6 @@ body{
                     padding-bottom: 4%;
                     align-self: center;
                 }
-
 
             /* posts */
 
@@ -424,7 +421,6 @@ body{
                 .post .btn{
                     margin-bottom: 0;
                 }
-
             
             /* paginação */
 
@@ -471,8 +467,6 @@ body{
                     color: #e7e7e7;
                     pointer-events: none;
                 }
-
-
             
             /* formulario */
 
@@ -481,7 +475,27 @@ body{
                     padding: 3% 5%;
                 }
 
-            
+                .form-name input{
+                    margin-top: 2%;
+                    margin-bottom: 5%;
+                }
+
+                .form-email input{
+                    margin-top: 2%;
+                    margin-bottom: 5%;
+                }
+
+                .form-message textarea{
+                    margin-top: 2%;
+                    margin-bottom: 5%;
+                }
+
+            /* contato */
+
+                .address-container{
+                    padding: 8%;
+                }
+
             /* rodapé */
 
                 #footer{
