@@ -3,7 +3,7 @@ body{
     background-image: url(../images/overlay.png), url(../images/bg.jpg);
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center top;
     color: #383838;
 }
 
@@ -61,7 +61,7 @@ body{
     /* cabeçalho */
 
         #header{
-            padding: 6% 10% 10%;
+            margin: 6% 15% 10%;
         }
 
         #header h1{
@@ -240,7 +240,7 @@ body{
     /* formulario */
 
         #forms{
-            background-color: #f0f0f0;
+            background-color: #f7f7f7;
             padding: 8% 10% 10%
         }
 
@@ -253,8 +253,8 @@ body{
         }
 
         .form-input{
-            background-color: #f0f0f0;
-            border: 2px solid #c7c7c7;
+            background-color: #f7f7f7;
+            border: 2px solid #dddddd;
             padding: 3% 0;
         }
 
@@ -364,8 +364,12 @@ body{
             
             /* header */
 
+                #header{
+                    margin: 6% 5% 10%;
+                }
+
                 #header h1{
-                    font-size: 2.9rem;
+                    font-size: 3.3rem;
                 }
 
                 #header p{
@@ -382,11 +386,16 @@ body{
                 }
 
                 .top-post_date{
-                    margin-bottom: 8%;
+                    margin-bottom: 5%;
                 }
 
                 #top-post h2{
-                    font-size: 2.8rem;
+                    font-size: 2.5rem;
+                    margin-bottom: 4%;
+                }
+
+                .top-post_text{
+                    margin-bottom: 4%;
                 }
 
                 #top-post .btn{
@@ -466,7 +475,7 @@ body{
                 }
 
                 .pagination-list li a:hover{
-                    color: #1845c2;
+                    background-color:#e7e7e7;
                 }
 
                 .pagination-list li:last-of-type a{
@@ -521,9 +530,13 @@ body{
             
             /* cabeçalho */
 
+                #header{
+                    margin: 6% 5% 8%;
+                }
 
                 #header h1{
-                    font-size: 4.8rem;
+                    font-size: 5.5rem;
+                    margin-top: 15%;
                 }
 
                 #header p{
@@ -559,8 +572,9 @@ body{
                     text-decoration: none;
                     color: white;
                     font-weight: bold;
-                    letter-spacing: 2px;
-                    font-size: .8rem;
+                    text-transform: uppercase;
+                    letter-spacing: 4px;
+                    font-size: .6rem;
                     padding-left: 30px;
                     padding-right: 30px;
                     height: 60px;
@@ -579,5 +593,200 @@ body{
                     background-color: transparent;
                 }
 
+            /* post principal */
+
+                #top-post .btn{
+                    padding: 3% 5%;
+                }
+
+                .top-post_date::before{
+                    width: 35%;
+                }
+        
+                .top-post_date::after{
+               
+                    left: 65%; 
+                    width: 35%;
+                }
+
+            /* posts */
+
+                #posts .btn{
+                    width: fit-content;
+                    margin: auto;
+                }
+
+            /* formulario */
+
+                #forms{
+                    grid-column: 1 / 7;
+                    grid-row: 6 / 7;
+                    border-right: 2px solid #dddddd;
+                    border-top: 2px solid #dddddd;
+                }
+
+                .form-label{
+                    font-size: .8rem;
+                }
+
+                .form-btn{
+                    width: fit-content;
+                    font-size: .8rem;
+                    letter-spacing: 1px;
+                }
+
+            /* contato */
+
+                #contact{
+                    grid-column: 7 / -1;
+                    grid-row: 6 / 7;
+                    background-color: #f7f7f7;
+                    border-top: 2px solid #dddddd;
+                }
+
+                .address-container{
+                    color: #747474;
+                    border-bottom: 2px solid #dddddd;
+                    padding-top: 10%;
+                }
+
+                .address-container:nth-last-child(1){
+                    border-top: none;
+                }
+
+                #contact p{
+                    font-size: .8rem;
+                }
+
+                #contact .link-list_ico{
+                    filter: invert(45%) sepia(0%) saturate(34%) hue-rotate(66deg) brightness(108%) contrast(73%);
+                }
+
+            /* rodapé */
+
+                #footer{
+                    grid-column: 1 / -1;
+                    grid-row: 7 / 8;
+                }
         }
 
+/* desktop */
+
+        @media screen and (min-width: 1024px) {
+
+            #page-container{
+                margin-right: 10%;
+                margin-left: 10%;
+            }
+
+            /* cabeçalho */
+
+                #header{
+                    margin: 6% 5% 8%;
+                }
+
+                #header h1{
+                    font-size: 6.5rem;
+                }
+
+                #header p{
+                    font-size: 1.7rem;
+                    margin-top: 5%;
+                }
+
+            /* menu */
+
+                .menu-link{
+                    font-size: .8rem;
+                    height: 80px;
+                }
+
+                #menu .link-list_ico{
+                    margin-right: 50px;
+                    width: 25px;
+                }
+
+
+            /* post principal */
+
+                .top-post_date{
+                    font-size: 1.3rem;
+                }
+
+                #top-post h2{
+                    font-size: 5rem;
+                    margin-top: 5%;
+                }
+
+                .top-post_text{
+                    font-size: 1.6rem;
+                    line-height: 2;
+                    margin-bottom: 7%;
+                }
+
+                #top-post .btn{
+                    padding: 2% 5%;
+                    font-size: 1.2rem;
+                }
+
+            /* posts */
+
+                .post p:nth-child(1){
+                    font-size: 1.2rem;
+                }
+
+                .post h3{
+                    font-size: 2.5rem;
+                }
+
+                .post-text{
+                    font-size: 1.5rem;
+                }
+
+                .post .btn{
+                    padding: 4% 7%;
+                    font-size: 1rem;
+                }
+
+            /* paginação */
+
+                .pagination-container{
+                    margin-top: 7%;
+                    margin-bottom: 7%;
+                }
+
+                .pagination-list li a{
+                    padding: 20px 27px;
+                }
+
+            /* formulario */
+
+                .form-label{
+                    font-size: 1rem;
+                }
+
+            /* contato */
+                    
+                #contact p{
+                    font-size: 1rem;
+                }
+
+            /* rodapé */
+
+                #footer p{
+                    font-size: 1.2rem;
+                }
+            
+        }
+
+
+/* desktop - maior que 1600px */
+
+        @media screen and (min-width: 1600px) {
+
+            #header{
+                padding: 5%;
+                margin: 3% 5% 5%;
+            }
+            
+        }
