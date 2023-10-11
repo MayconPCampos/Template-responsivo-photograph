@@ -22,34 +22,39 @@ body{
             grid-row: 1 / 2;
         }
 
-        #top-post{
+        #menu{
             grid-column: 1 / -1;
             grid-row: 2 / 3;
         }
 
-        #posts{
+        #top-post{
             grid-column: 1 / -1;
             grid-row: 3 / 4;
         }
 
-        #pagination{
+        #posts{
             grid-column: 1 / -1;
             grid-row: 4 / 5;
         }
 
-        #forms{
+        #pagination{
             grid-column: 1 / -1;
             grid-row: 5 / 6;
         }
 
-        #contact{
+        #forms{
             grid-column: 1 / -1;
             grid-row: 6 / 7;
         }
 
-        #footer{
+        #contact{
             grid-column: 1 / -1;
             grid-row: 7 / 8;
+        }
+
+        #footer{
+            grid-column: 1 / -1;
+            grid-row: 8 / 9;
         }
 
 
@@ -80,6 +85,12 @@ body{
         #header img{
             display: none;
         }
+
+    /* menu */
+
+        #menu{
+            display: none;
+        } 
 
     /* post principal */
 
@@ -324,7 +335,7 @@ body{
             width: 20px;
             margin: auto;
             margin-right: 20px;
-        }  
+        } 
     
     /* rodapé */
 
@@ -346,7 +357,6 @@ body{
 
         @media screen and (min-width: 480px) {
 
-
             #page-container{
                 margin-left: 5%;
                 margin-right: 5%;
@@ -355,11 +365,11 @@ body{
             /* header */
 
                 #header h1{
-                    font-size: 3.8rem;
+                    font-size: 2.9rem;
                 }
 
                 #header p{
-                    font-size: 1.3rem;
+                    font-size: 1.1rem;
                 }
             
             /* post principal */
@@ -376,12 +386,12 @@ body{
                 }
 
                 #top-post h2{
-                    font-size: 3.5rem;
+                    font-size: 2.8rem;
                 }
 
                 #top-post .btn{
                     display: inline-block;
-                    width: 20%;
+                    width: fit-content;
                     padding-top: 4%;
                     padding-bottom: 4%;
                     align-self: center;
@@ -450,7 +460,7 @@ body{
                     color: #383838;
                     border: 2px solid #e7e7e7;
                     border-right: none;
-                    padding: 12px 18px;
+                    padding: 10px 16px;
                     width: 15%;
                     font-weight: bold;
                 }
@@ -504,3 +514,70 @@ body{
                     color: #ffffff;
                 }
         }
+
+/* notebook - máx 1280px */
+
+        @media screen and (min-width: 768px) {
+            
+            /* cabeçalho */
+
+
+                #header h1{
+                    font-size: 4.8rem;
+                }
+
+                #header p{
+                    font-size: 1.3rem;
+                }
+        
+                
+            /* menu */
+                
+                #menu{
+                    display: block;
+                    background-color: rgba(0,0,0,.5);
+                }
+
+                #menu ul{
+                    display: flex;
+                }
+
+                #menu ul li{
+                    display: flex;
+                    align-items: center;
+                }
+
+                #menu ul li:hover{
+                    background-color: white;
+                }
+
+                #menu ul li:hover .menu-link{
+                    color: #383838;
+                }
+
+                .menu-link{
+                    text-decoration: none;
+                    color: white;
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                    font-size: .8rem;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                }
+
+                #menu ul li:nth-child(4){
+                    margin-left: auto;
+                }
+
+                #menu ul li:nth-child(4),
+                #menu ul li:nth-child(5),
+                #menu ul li:nth-child(6),
+                #menu ul li:nth-child(7){
+                    background-color: transparent;
+                }
+
+        }
+
