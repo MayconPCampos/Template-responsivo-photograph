@@ -167,6 +167,11 @@ body{
             color: #383838;
         }
 
+        .btn:hover{
+            border-color: #297cc9;
+            color: #297cc9;
+        }
+
     /* posts */
 
         #posts{
@@ -337,7 +342,7 @@ body{
             width: 20px;
             margin: auto;
             margin-right: 20px;
-        } 
+        }
     
     /* rodapé */
 
