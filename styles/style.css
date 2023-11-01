@@ -169,8 +169,8 @@ body{
         }
 
         .btn:hover{
-            border-color: #297cc9;
-            color: #297cc9;
+            border-color: #926154;
+            color: #926154;
         }
 
     /* posts */
@@ -263,7 +263,13 @@ body{
         .form-input{
             background-color: #f7f7f7;
             border: 2px solid #dddddd;
-            padding: 3% 0;
+            padding: 3% 5px;
+            color: #747474;
+        }
+
+        .form-input:focus{
+            outline: none;
+            color: #747474;
         }
 
         .form-name input{
@@ -289,8 +295,9 @@ body{
             border-color: #747474;
             color:#747474;
             background-color: #f7f7f7;
+            cursor: pointer;
         }
-    
+
     /* contato */
     
         .address-container{
