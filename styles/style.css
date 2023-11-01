@@ -1,13 +1,22 @@
-body{
-    font-family: Segoe UI,Helvetica Neue,sans-serif;
-    background-image: url(../images/overlay.png), url(../images/bg.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center top;
-    color: #383838;
-    min-width: 320px;
-}
+/* background da página */
 
+    body{
+        font-family: Segoe UI,Helvetica Neue,sans-serif;
+        background-image: url(../images/overlay.png), url(../images/bg.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center top;
+        color: #383838;
+        min-width: 320px;
+    }
+
+    #page-background{
+        transition: all 2s;
+    }
+
+    /* .page-background-is-loading{
+        background-color: rgba(0,0,0,1);
+    } */
 
 /* mobile - máx 480px */
 
@@ -544,6 +553,10 @@ body{
 /* notebook - máx 1280px */
 
         @media screen and (min-width: 768px) {
+
+            .page-background-is-loading{
+                background-color: rgba(0,0,0,1);
+            }
             
             /* cabeçalho */
 
