@@ -547,11 +547,13 @@ body{
                 #header h1{
                     font-size: 5.5rem;
                     margin-top: 15%;
+                    transition: all 2s;
                 }
 
                 #header p{
                     font-size: 1.3rem;
                     padding: 0 30px;
+                    transition: all 2s;
                 }
 
                 #header img{
@@ -562,6 +564,16 @@ body{
                     padding: 20px 23px;
                     margin: auto;
                     margin-top: 3%;
+                    transition: all 2s;
+                }
+
+                .is-loading{
+                    transform: translateY(50px);
+                    opacity: 0;
+                }
+
+                .is-loading-links{
+                    opacity: 0;
                 }
         
             /* menu */
@@ -611,6 +623,10 @@ body{
                 #menu ul li:nth-child(6),
                 #menu ul li:nth-child(7){
                     background-color: transparent;
+                }
+
+                #menu ul li a{
+                    transition: all 1.5s;
                 }
 
             /* post principal */
