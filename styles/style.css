@@ -626,7 +626,7 @@ body{
                 }
 
                 #menu ul li a{
-                    transition: all 1.5s;
+                    transition: opacity 1.5s;
                 }
 
             /* post principal */
