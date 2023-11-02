@@ -14,6 +14,19 @@
         transition: all 2s;
     }
 
+    .page-background-is-loading{
+        background-color: rgba(0,0,0,1);
+    }
+
+    .is-loading{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    .is-loading-links{
+        opacity: 0;
+    }
+
 /* mobile - máx 480px */
 
     /* grid */
@@ -78,6 +91,7 @@
             letter-spacing: 3px;
             line-height: 1.1;
             text-align: center;
+            transition: all 2s;
         }
 
         #header p{
@@ -85,10 +99,12 @@
             color: white;
             text-align: center;
             line-height: 2;
+            transition: all 2s;
         }
 
         #header img{
             display: none;
+            transition: all 2s;
         }
 
     /* menu */
@@ -550,10 +566,6 @@
 /* notebook - máx 1280px */
 
         @media screen and (min-width: 768px) {
-
-            .page-background-is-loading{
-                background-color: rgba(0,0,0,1);
-            }
             
             /* cabeçalho */
 
@@ -564,13 +576,11 @@
                 #header h1{
                     font-size: 5.5rem;
                     margin-top: 15%;
-                    transition: all 2s;
                 }
 
                 #header p{
                     font-size: 1.3rem;
                     padding: 0 30px;
-                    transition: all 2s;
                 }
 
                 #header img{
@@ -581,17 +591,9 @@
                     padding: 20px 23px;
                     margin: auto;
                     margin-top: 3%;
-                    transition: all 2s;
                 }
 
-                .is-loading{
-                    transform: translateY(50px);
-                    opacity: 0;
-                }
-
-                .is-loading-links{
-                    opacity: 0;
-                }
+      
         
             /* menu */
                 
