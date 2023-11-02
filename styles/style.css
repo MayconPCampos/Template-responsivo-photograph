@@ -14,10 +14,6 @@
         transition: all 2s;
     }
 
-    /* .page-background-is-loading{
-        background-color: rgba(0,0,0,1);
-    } */
-
 /* mobile - máx 480px */
 
     /* grid */
@@ -297,6 +293,7 @@
             width: 100%;
             margin-top: 5%;
             margin-bottom: 8%;
+            resize: none;
         }
 
         .form-btn{
