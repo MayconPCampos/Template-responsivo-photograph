@@ -1,4 +1,4 @@
-# Template-responsivo-photograph
+# Responsive template - The photograph
 
 <br>
-<a href="https://mayconpcampos.github.io/Template-responsivo-photograph/" target="_blank">Clique aqui para ver no navegador</a>
+<a href="https://mayconpcampos.github.io/Template-responsivo-photograph/" target="_blank">See it on the browser</a>
