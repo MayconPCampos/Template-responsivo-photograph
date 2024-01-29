@@ -14,7 +14,7 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1280px) {
     background-size: 250%;
   }
 }
@@ -388,6 +388,8 @@ body {
 #footer {
   padding: 8%;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   border-top: 2px solid #e4e4e4;
   color: #747474;
   background-color: #ffffff;
@@ -725,6 +727,7 @@ body {
   #footer {
     grid-column: 1 / -1;
     grid-row: 7 / 8;
+    background-color: rgba(0, 0, 0, 0.9);
   }
 }
 
@@ -830,12 +833,6 @@ body {
 
   #contact p {
     font-size: 1rem;
-  }
-
-  /* rodapé */
-
-  #footer p {
-    font-size: 1.2rem;
   }
 }
 
